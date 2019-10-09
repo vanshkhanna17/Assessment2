@@ -1,0 +1,50 @@
+<div class="container">
+    <form (ngSubmit)="add()">
+        <div class="row">
+            <fieldset class="col-md-6">
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Employee Name:</label>&nbsp;{{name}}
+                    <input class="form-control" type="text" name="name" placeholder="Employee Name" [(ngModel)]="name">
+                    <p class="small">{{msg1}}</p>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Date Of Birth:</label>&nbsp;&nbsp;{{dob}}
+                    <input class="form-control" type="date" name="dob" placeholder="Date of Birth" [(ngModel)]="dob">
+                    <p class="small">{{msg2}}</p>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Employee Home address:</label>&nbsp;&nbsp;{{addr}}
+                    <textarea class="form-control" type="text" name="addr" placeholder="Home Address" [(ngModel)]="addr"></textarea>
+                    <p class="small">{{msg3}}</p>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Employee phone number:</label>&nbsp;{{phone}}
+                    <input class="form-control" type="text" name="phone" placeholder="Phone number" [(ngModel)]="phone">
+                    <p class="small">{{msg4}}</p>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Employee Degree (Highest):</label>&nbsp;{{deg}}
+                    <input class="form-control" type="text" name="deg" placeholder="Highest Degree" [(ngModel)]="deg">
+                    <p class="small">{{msg5}}</p>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Employee Marks (Percentage):</label>&nbsp;{{marks}}%
+                    <input class="form-control" type="text" name="marks" placeholder="Marks in percentage" [(ngModel)]="marks">
+                    <p class="small">{{msg6}}</p>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Employee Stream:</label>&nbsp;{{strm}}
+                    <input class="form-control" type="text" name="strm" placeholder="Stream" [(ngModel)]="strm">
+                    <p class="small">{{msg7}}</p>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Employee College:</label>&nbsp;{{clg}}
+                    <input class="form-control" type="text" name="clg" placeholder="College" [(ngModel)]="clg">
+                    <p class="small">{{msg8}}</p>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Details</button>
+            </fieldset>
+        </div>
+    </form>
+</div>
+ 

@@ -1,0 +1,44 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-striped table-hover table1">
+                <thead class="thaed thead-dark">
+                    <th>Employee Id</th>
+                    <th>Employee Name</th>
+                    <th>Employee Date of Birth</th>
+                    <th>Employee Home Address</th>
+                    <th>Employee Phone Number</th>
+                </thead>
+                <tbody>
+                    <td>{{eml.id}}</td>
+                    <td>{{eml.name}}</td>
+                    <td>{{eml.dob}}</td>
+                    <td>{{eml.addr}}</td>
+                    <td>{{eml.phone}}</td>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-striped table-hover">
+                <thead class="thaed thead-dark">
+                    <th>Employee Degree</th>
+                    <th>Employee Marks</th>
+                    <th>Employee Stream</th>
+                    <th>Employee College</th>
+                    <th>Edit/Remove</th>
+                </thead>
+                <tbody>
+                    <td>{{eml.degr}}</td>
+                    <td>{{eml.marks}}%</td>
+                    <td>{{eml.strm}}</td>
+                    <td>{{eml.clg}}</td>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <a class="btn btn-warning" routerLink="editp/{{empId}}">Edit Personal Information</a>&nbsp;
+            <a class="btn btn-warning" routerLink="edite/{{empId}}">Edit Educational Information</a>&nbsp;
+            <Button type="button" class="btn btn-danger" (click)="remv(i)">Remove</Button>
+        </div>
+    </div>
+</div>

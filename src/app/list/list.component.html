@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="a">
+        <label> Search by typing the exact employee name:</label>&nbsp;
+        <input type="text" name="srch" [(ngModel)]="srch">&nbsp;
+        <button class="btn btn-dark" (click)="search()">Search</button>
+    </div>
+    <table class="table table-bordered table-striped table1">
+        <thead class="thaed thead-dark">
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Date of Birth</th>
+            <th>Employee Home Address</th>
+            <th>Employee Phone Number</th>
+        </thead>
+        <tbody *ngFor="let arr of array, let i = index">
+
+            <a class="table-row" routerLink="details/{{arr.id}}">
+                <td>{{arr.id}}</td>
+                <td>{{arr.name}}</td>
+                <td>{{arr.dob}}</td>
+                <td>{{arr.addr}}</td>
+                <td>{{arr.phone}}</td>
+            </a>
+
+        </tbody>
+    </table>
+</div>

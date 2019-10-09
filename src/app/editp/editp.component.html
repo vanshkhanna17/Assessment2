@@ -1,0 +1,26 @@
+<div class="container">
+        <form (ngSubmit)="edit()">
+            <div class="row">
+                <fieldset class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-md-3-form-label">Employee Name:</label>&nbsp;{{name}}
+                        <input class="form-control" type="text" name="name" placeholder="Book Title" [(ngModel)]="name">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3-form-label">Date Of Birth:</label>&nbsp;&nbsp;{{dob}}
+                        <input class="form-control" type="date" name="dob" placeholder="Date of Birth" [(ngModel)]="dob">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3-form-label">Employee Home address:</label>&nbsp;&nbsp;{{addr}}
+                        <textarea class="form-control" type="text" name="addr" placeholder="Home Address"
+                            [(ngModel)]="addr"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3-form-label">Employee phone number:</label>&nbsp;{{phone}}
+                        <input class="form-control" type="text" name="phone" placeholder="Phone number" [(ngModel)]="phone">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Edit Details</button>
+                </fieldset>
+            </div>
+        </form>
+    </div>
